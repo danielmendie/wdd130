@@ -43,7 +43,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -167,3 +167,118 @@ figure img {
     height: auto;
     padding: 5px;
 }
+
+/* About page */
+
+.contact-info{
+    align-content: center;
+    text-align: center;
+}
+
+.contact-info h1{
+    margin: 0;
+}
+
+.contact-info p{
+    margin: 2px;
+    padding: 3px;
+    color: #333;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y)
+}
+
+.col-6 {
+    flex: 0 0 auto
+}
+
+.col-6 {
+    width: 50%
+}
+
+iframe{
+    border:0;
+    width: 370px;
+    height: 370px;
+}
+
+button, input, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    
+}
+
+.input-group .sm{
+    grid-template-columns: 0.1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.input-group-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.members {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+}
+
+.members .heading{
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.members figure{
+    max-width: 250px;
+    padding: 50px;
+}
+
+.btn{
+    padding: 10px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: larger;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    background-color: silver;
+    width: 100%;
+    margin: 5px 0px;
+}
+

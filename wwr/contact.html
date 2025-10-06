@@ -24,61 +24,78 @@
     </header>
     <main>
         <section>
-            <div>
-                <h1>Contact Us</h1>
-                <p>Address: 123 River Road, Adventure City, Zip 56789</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Email: info@raftingtravel.com</p>
+            <div class="contact-info">
+                <h1>Rafting Travel</h1>
+                <p>95 Ikono Road</p>
+                <p>Ikot Ekpene, Akwa Ibom</p>
+                <p>+234 704 456 7890</p>
+                <p>info@raftingtravel.com</p>
             </div>
         </section>
         <section>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.3841133518235!2d7.713635299999995!3d5.202171100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042b23c240ba07d%3A0x49714e3ad054b01!2s92%20Ikono%20Rd%2C%20Ikot%20Ekpene%20530101%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1759721834849!5m2!1sen!2sng"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div>
-                    <h2>Send Us a Message</h2>
+            <div class="row">
+                <div class="col-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.3841133518235!2d7.713635299999995!3d5.202171100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042b23c240ba07d%3A0x49714e3ad054b01!2s92%20Ikono%20Rd%2C%20Ikot%20Ekpene%20530101%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1759721834849!5m2!1sen!2sng"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-6">
                     <form>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <br>
-                        <label>Purpose:</label>
-                        <input type="radio" id="general" name="purpose" value="general" required>
-                        <label for="general">General Inquiry</label>
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label for="reservation">Reservation Question</label>
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        <label for="suggestion">Website Suggestion</label>
-                        <br>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <br>
+                        <div class="input-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Email address" required
+                                class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <label>Message Purpose:</label>
+                            <div class="input-group-column">
+                                <div class="input-group sm">
+                                    <input type="radio" id="general" name="purpose" value="general" required>
+                                    <label for="general">General Inquiry</label>
+                                </div>
+                                <div class="input-group sm">
+                                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                                    <label for="reservation">Reservation Question</label>
+                                </div>
+                                <div class="input-group sm">
+                                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                                    <label for="suggestion">Website Suggestion</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" required class="form-control"
+                            placeholder="Type here"></textarea>
+
                         <input type="checkbox" id="newsletter" name="newsletter">
                         <label for="newsletter">Please subscribe me to monthly newsletter</label>
-                        <br>
-                        <button type="submit">Send Message</button>
+
+                        <button class="btn" type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
         </section>
         <section>
-            <div>
-                <h2>We Are Here to Serve You</h2>
+            <div class="members">
+                <h2 class="heading">We Are Here to Serve You</h2>
                 <figure>
-                    <img src="images/employee1.webp" alt="Jane Doe - Guide">
-                    <figcaption>Jane Doe – Lead Guide</figcaption>
+                    <img src="images/users/lead.webp" alt="Johnson Morris - Guide">
+                    <figcaption>Johnson Morris – Lead Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.webp" alt="Joe Smith - Safety">
-                    <figcaption>Joe Smith – Safety Coordinator</figcaption>
+                    <img src="images/users/safty.webp" alt="Sarah Smith - Safety">
+                    <figcaption>Sarah Smith – Safety Coordinator</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.webp" alt="Mary Johnson - Reservation">
-                    <figcaption>Mary Johnson – Reservations Manager</figcaption>
+                    <img src="images/users/reserve.webp" alt="Dorcas James - Reservation">
+                    <figcaption>Dorcas James – Reservations Manager</figcaption>
                 </figure>
             </div>
         </section>

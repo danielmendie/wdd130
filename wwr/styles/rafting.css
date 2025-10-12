@@ -275,8 +275,6 @@ button, input, textarea {
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
     user-select: none;
     border: none;
     border-radius: 2px;

@@ -332,3 +332,39 @@ button, input, textarea {
     text-decoration: none;
 }
 
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th, td {
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  border-left: none;
+  border-right: none;
+  padding: 10px 16px;
+  text-align: left;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 40%;
+}
+th:nth-child(2), td:nth-child(2),
+th:nth-child(3), td:nth-child(3) {
+  width: 20%;
+}
+th:nth-child(4), td:nth-child(4) {
+  width: 20%;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+

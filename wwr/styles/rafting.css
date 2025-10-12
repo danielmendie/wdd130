@@ -111,7 +111,9 @@ header img {
     text-align: center;
 }
 
-.history p, .trip-description p {
+.history p, 
+.trip-description p,
+.newsletter-box p {
     margin: 0;
 }
 
@@ -268,16 +270,16 @@ button, input, textarea {
     font-family: var(--heading-font);
     font-weight: bold;
     font-size: larger;
-    color: #333;
+    color: #fff;
+    background: var(--secondary-color);
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    border: 1px solid #333;
+    border: none;
     border-radius: 2px;
-    background-color: silver;
     width: 100%;
     margin: 5px 0px;
 }
@@ -311,60 +313,148 @@ button, input, textarea {
     border-radius: 5%;
 }
 
-.call-action {
-    text-align: center !important;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.btn-cta {
-    justify-content: center;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-    border-width: 1px;
-    padding: 22px 40px !important;
-    border-radius: 500px;
-    border-color: var(--secondary-color);
-    background-color: var(--secondary-color);
-    color: #fff;
-    transition: all .5s;
-    text-decoration: none;
-}
-
 table {
-  border-collapse: collapse;
-  width: 80%;
-  margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
 }
 
 th, td {
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
-  border-left: none;
-  border-right: none;
-  padding: 10px 16px;
-  text-align: left;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    border-left: none;
+    border-right: none;
+    padding: 10px 16px;
+    text-align: left;
 }
 
 th:nth-child(1), td:nth-child(1) {
-  width: 40%;
+    width: 40%;
 }
 th:nth-child(2), td:nth-child(2),
 th:nth-child(3), td:nth-child(3) {
-  width: 20%;
+    width: 20%;
 }
 th:nth-child(4), td:nth-child(4) {
-  width: 20%;
-  text-align: center;
+    width: 20%;
+    text-align: center;
 }
 
 th {
-  background-color: #f2f2f2;
-  color: #333;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
 tr:nth-child(even) {
-  background-color: #fafafa;
+    background-color: #fafafa;
 }
 
+.newsletter-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 30px;
+}
+
+.newsletter-box h2 {
+    margin-left: 9px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.newsletter-form label {
+    display: none;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 280px;
+}
+
+.newsletter-form button {
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: var(--accent2-color);
+}
+
+.cta-trips {
+    margin-top: 10px;
+    background: #eef6fc;
+    border-left: 5px solid var(--secondary-color);
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: space-between;
+}
+
+.cta-trips span {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.cta-trips a {
+    color: #fff;
+    background: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    transition: background 0.2s;
+    font-size: 17px;
+}
+
+.cta-trips a:hover {
+    background: var(--accent2-color);
+}
+
+.rafting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.grid-item {
+    padding: 24px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(34,119,238,0.12);
+}
+
+.grid-item h3 {
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: #333;
+}

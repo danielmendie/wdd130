@@ -111,7 +111,7 @@ header img {
     text-align: center;
 }
 
-.history p {
+.history p, .trip-description p {
     margin: 0;
 }
 
@@ -280,5 +280,55 @@ button, input, textarea {
     background-color: silver;
     width: 100%;
     margin: 5px 0px;
+}
+
+.trip-list-normal {
+    display: grid;
+    grid-template-columns:  1fr 300px;
+    margin-bottom: 5px;
+}
+
+.trip-list-reverse {
+    display: grid;
+    grid-template-columns:  300px 1fr;
+    margin-bottom: 5px;
+}
+
+.trip-description{
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+.trip-list-normal img {
+    width: 220px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.trip-list-reverse img {
+    width: 220px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.call-action {
+    text-align: center !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.btn-cta {
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    border-width: 1px;
+    padding: 22px 40px !important;
+    border-radius: 500px;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+    transition: all .5s;
+    text-decoration: none;
 }
 
